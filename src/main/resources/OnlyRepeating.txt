@@ -1,0 +1,4 @@
+OBX|1|ST|84295^Na||150|mmol/l|136-148|Above high normal|||Final results
+OBX|2|ST|84132^K+||4.5|mmol/l|3.5-5|Normal|||Final results
+OBX|3|ST|82435^Cl||102|mmol/l|94-105|Normal|||Final results
+OBX|4|ST|82374^CO2||27|mmol/l|24-31|Normal|||Final results

@@ -1,0 +1,43 @@
+<!--
+
+OBR||||80004^Electrolytes
+OBX|1|ST|84295^Na||150|mmol/l|136-148|Above high normal|||Final results
+OBX|2|ST|84132^K+||4.5|mmol/l|3.5-5|Normal|||Final results
+OBX|3|ST|82435^Cl||102|mmol/l|94-105|Normal|||Final results
+OBX|4|ST|82374^CO2||27|mmol/l|24-31|Normal|||Final results
+
+-->
+<Parser type="Simple">
+	<!-- Group that occurs one time. If this pattern repeats, wrap it under RepeatingGroup than Group.-->
+	
+	<!-- Delimited Repeating group of records. Should declare all fields irrespective of whether its taken. This will make the parser simple to understand-->
+	<RepeatingGroup>
+		<Record type="delimited" delimiter="|" terminator="crlf" name="tests">
+			<Content name="type" type="string" generate="false">
+			</Content>
+			<Content name="serialNo" type="string" generate="false">
+			</Content>
+			<Content name="testRef" type="string" generate="true">
+			</Content>
+			<Content name="test" type="string" generate="true">
+			</Content>
+			<Content name="empty" type="string" generate="false">
+			</Content>
+			<Content name="testResult" type="string" generate="true">
+			</Content>
+			<Content name="testUnit" type="string" generate="true">
+			</Content>
+			<Content name="normalRange" type="string" generate="true">
+			</Content>
+			<Content name="observation" type="string" generate="true">
+			</Content>
+			<Content name="empty" type="string" generate="true">
+			</Content>
+			<Content name="empty" type="string" generate="true">
+			</Content>
+			<Content name="notneeded" type="string" generate="true">
+			</Content>
+		</Record>
+	</RepeatingGroup>
+
+</Parser>
